@@ -1,0 +1,7 @@
+# Исключаем отчёты и скриншоты из анализа языков
+/tests/screenshots/* linguist-vendored
+/screenshots/* linguist-vendored
+/report.html linguist-generated
+/tests/report.html linguist-generated
+/assets/* linguist-vendored
+/chromedriver/* linguist-vendored
