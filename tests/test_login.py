@@ -25,13 +25,9 @@ def test_login(driver):
     except Exception as e:
         print("Не удалось переключиться на reCAPTCHA iframe:", e)
 
-    # В случае с рекапчей можно добавить логику для игнорирования или обхода.
-    # Если нужно пропустить рекапчу:
     driver.switch_to.default_content()  # Возвращаемся в основной контент страницы
 
     # Нажимаем на кнопку "Войти"
     login_page.submit_login()
 
-    # Здесь можно добавить проверку успешного входа, например, наличие элемента на странице
-    # assert "Welcome" in driver.page_source  # Пример проверки
 
