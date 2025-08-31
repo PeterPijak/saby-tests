@@ -12,7 +12,6 @@ def driver():
     driver = webdriver.Chrome(service=service)
     yield driver
     driver.quit()
-# Добавь в конец conftest.py
 
 import pytest
 
